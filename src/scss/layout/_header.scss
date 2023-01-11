@@ -1,0 +1,25 @@
+.header {
+	padding: 40px 0 60px 0;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background-color: var(--light-top-bg);
+
+	&__heading {
+		margin-bottom: 14px;
+		color: var(--light-black-text);
+	}
+
+	&__followers,
+	.switch-container__text {
+		font-weight: var(--fw-700);
+		color: var(--light-gray-text);
+	}
+
+	&__switch-container {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 25px;
+		padding: 16px 0;
+		border-top: 1px solid var(--light-gray-text);
+	}
+}
