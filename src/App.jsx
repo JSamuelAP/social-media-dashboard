@@ -1,32 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
-		<div className="App">
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logo" alt="Vite logo" />
+		<div>
+			Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
+			Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
+			Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
+			Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
+			Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+			<div class="attribution">
+				Challenge by{" "}
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+					Frontend Mentor
 				</a>
-				<a href="https://reactjs.org" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
+				. Coded by <a href="#">Your Name Here</a>.
 			</div>
-			<h1>Vite + React</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
 		</div>
 	);
 }

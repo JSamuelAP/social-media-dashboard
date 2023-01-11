@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Avoid accidental Sketch file upload
+*.sketch
+
+# Avoid accidental XD or Figma upload if you convert the design file
+*.xd
+*.fig
