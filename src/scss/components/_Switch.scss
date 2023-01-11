@@ -1,0 +1,28 @@
+.switch {
+	width: 48px;
+	height: 24px;
+	padding: 3px 4px;
+	border-radius: 12px;
+	position: relative;
+	background-color: var(--light-togle);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.active {
+		background: var(--dark-togle);
+
+		.switch__circle {
+			transform: translateX(calc(100% + 4px));
+		}
+	}
+
+	&__circle {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: var(--light-bg);
+		transition: transform 0.25s ease-out;
+	}
+}

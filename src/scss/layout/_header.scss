@@ -18,6 +18,7 @@
 	&__switch-container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-top: 25px;
 		padding: 16px 0;
 		border-top: 1px solid var(--light-gray-text);

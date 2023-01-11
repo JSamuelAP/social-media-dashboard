@@ -1,3 +1,5 @@
+import Switch from "./Switch";
+
 const Header = () => {
 	return (
 		<header className="header">
@@ -8,7 +10,7 @@ const Header = () => {
 				</div>
 				<div className="header__switch-container">
 					<span className="switch-container__text">Dark Mode</span>
-					<div>Switch will be here</div>
+					<Switch />
 				</div>
 			</div>
 		</header>

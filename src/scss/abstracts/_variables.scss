@@ -10,7 +10,11 @@
 	--youTube: hsl(348, 97%, 39%);
 
 	// Toggle colors
-	--dark-togle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	--dark-togle: linear-gradient(
+		to right,
+		hsl(210, 78%, 56%),
+		hsl(146, 68%, 55%)
+	);
 	--light-togle: hsl(230, 22%, 74%);
 
 	// Neutral theme colors

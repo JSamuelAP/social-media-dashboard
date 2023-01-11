@@ -10,7 +10,12 @@
 
 // Layout
 @import "scss/layout/gris";
-@import "scss/layout/header"; // Components
+@import "scss/layout/header";
+
+// Components
+@import "scss/components/Switch";
+
 // Pages
+
 // Themes
 @import "scss/themes/theme";
