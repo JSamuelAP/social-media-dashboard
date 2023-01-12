@@ -1,0 +1,13 @@
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	/**
+	 * TODO: Ajustar a 1, 2 y maximo 4 columnas
+	 */
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+}
