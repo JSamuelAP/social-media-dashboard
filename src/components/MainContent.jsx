@@ -1,13 +1,47 @@
+import Card from "./Card";
+
 const MainContent = () => {
 	return (
 		<main class="main">
 			<div className="container">
 				<section className="social-media">
 					<div className="grid social__media-grid">
-						<article>@nathanf 1987 Followers 12 Today </article>
-						<article>@nathanf 1044 Followers 99 Today</article>
-						<article>@realnathanf 11k Followers 1099 Today </article>
-						<article>Nathan F. 8239 Subscribers 144 Today</article>
+						<Card
+							data={{
+								socialMedia: "facebook",
+								username: "@nathanf",
+								numFollowersTotal: "1987",
+								followersText: "Followers",
+								numFollowersToday: 12,
+							}}
+						/>
+						<Card
+							data={{
+								socialMedia: "twitter",
+								username: "@nathanf",
+								numFollowersTotal: "1044",
+								followersText: "Followers",
+								numFollowersToday: 99,
+							}}
+						/>
+						<Card
+							data={{
+								socialMedia: "instagram",
+								username: "@realnathanf",
+								numFollowersTotal: "11k",
+								followersText: "Followers",
+								numFollowersToday: 1099,
+							}}
+						/>
+						<Card
+							data={{
+								socialMedia: "youtube",
+								username: "Nathan F.",
+								numFollowersTotal: "8239",
+								followersText: "Subscribers",
+								numFollowersToday: -144,
+							}}
+						/>
 					</div>
 				</section>
 				<section className="overview">
