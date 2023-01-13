@@ -8,6 +8,11 @@
 	text-align: center;
 	background-color: var(--light-card-bg);
 
+	&:hover {
+		background-color: var(--light-card-hover);
+		cursor: pointer;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;

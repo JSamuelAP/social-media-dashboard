@@ -7,6 +7,11 @@
 	font-weight: var(--fw-700);
 	background-color: var(--light-card-bg);
 
+	&:hover {
+		background-color: var(--light-card-hover);
+		cursor: pointer;
+	}
+
 	&__heading {
 		font-size: var(--overview-card-heading);
 		color: var(--light-gray-text);
