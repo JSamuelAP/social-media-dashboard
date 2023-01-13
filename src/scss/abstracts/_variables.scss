@@ -3,12 +3,6 @@
 	--lime-green: hsl(163, 72%, 42%);
 	--bright-red: hsl(356, 69%, 56%);
 
-	// Social media colors
-	--facebook: hsl(208, 92%, 53%);
-	--twitter: hsl(203, 89%, 53%);
-	--instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-	--youtube: hsl(348, 97%, 39%);
-
 	// Toggle colors
 	--dark-togle: linear-gradient(
 		to right,
@@ -44,4 +38,11 @@ $breakpoints: (
 	l: 960px,
 	xl: 1024px,
 	xxl: 1200px,
+);
+
+$social-media-colors: (
+	facebook: hsl(208, 92%, 53%),
+	twitter: hsl(203, 89%, 53%),
+	instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)),
+	youtube: hsl(348, 97%, 39%),
 );

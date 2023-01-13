@@ -1,17 +1,8 @@
 .card {
-	--radius: 4px;
-
+	@extend %card;
 	position: relative;
 	padding: 32px 0 24px;
-	border-radius: var(--radius);
-	font-weight: var(--fw-700);
 	text-align: center;
-	background-color: var(--light-card-bg);
-
-	&:hover {
-		background-color: var(--light-card-hover);
-		cursor: pointer;
-	}
 
 	&::before {
 		content: "";
@@ -23,17 +14,10 @@
 		border-radius: var(--radius) var(--radius) 0 0;
 	}
 
-	&--facebook::before {
-		background: var(--facebook);
-	}
-	&--twitter::before {
-		background: var(--twitter);
-	}
-	&--instagram::before {
-		background: var(--instagram);
-	}
-	&--youtube::before {
-		background: var(--youtube);
+	@each $social-media, $color in $social-media-colors {
+		&--#{$social-media}::before {
+			background: $color;
+		}
 	}
 
 	&__heading {
@@ -69,17 +53,6 @@
 	}
 
 	&__followers-today {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 4px;
-		font-size: 12px;
-
-		&--positive {
-			color: var(--lime-green);
-		}
-		&--negative {
-			color: var(--bright-red);
-		}
+		@include stat(center);
 	}
 }

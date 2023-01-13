@@ -1,11 +1,6 @@
-/**
- * TODO: Reutilizar estilos para Card y CardToday
- */
 .card-today {
+	@extend %card;
 	padding: 30px 31px 26px 25px;
-	border-radius: 4px;
-	font-weight: var(--fw-700);
-	background-color: var(--light-card-bg);
 
 	&:hover {
 		background-color: var(--light-card-hover);
@@ -32,20 +27,7 @@
 		font-size: 32px;
 	}
 
-	/**
-   * TODO: Reutilizar estilos para las estadísticas con flecha
-   */
 	&__percentage {
-		display: flex;
-		align-items: center;
-		gap: 4px;
-		font-size: 12px;
-
-		&--positive {
-			color: var(--lime-green);
-		}
-		&--negative {
-			color: var(--bright-red);
-		}
+		@include stat(start);
 	}
 }
