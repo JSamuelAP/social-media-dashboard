@@ -1,4 +1,6 @@
 .switch {
+	display: flex;
+	justify-content: end;
 	width: 48px;
 	height: 24px;
 	padding: 3px 4px;
@@ -8,11 +10,14 @@
 
 	&:hover {
 		cursor: pointer;
+		body:not(dark) & {
+			background: var(--togle-hover);
+		}
 	}
 
 	&.active {
 		.switch__circle {
-			transform: translateX(calc(100% + 4px));
+			transform: translateX(calc((100% + 4px) * -1));
 		}
 	}
 
