@@ -1,7 +1,7 @@
 .footer {
 	padding: 2rem 0;
 	text-align: center;
-	color: var(--light-gray-text);
+	color: var(--text-light);
 
 	@include from(m) {
 		margin-top: -50px;

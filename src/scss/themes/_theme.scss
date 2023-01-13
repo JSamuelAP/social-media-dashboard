@@ -1,3 +1,10 @@
 body {
-	background-color: var(--light-bg);
+	background-color: var(--bg-color);
+
+	&.dark {
+		// Actualizar cada variable CSS a su color correspondiente en el tema oscuro
+		@each $key, $value in $dark-theme-colors {
+			--#{$key}: #{map-get($dark-theme-colors, $key)};
+		}
+	}
 }

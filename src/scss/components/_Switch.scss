@@ -4,15 +4,13 @@
 	padding: 3px 4px;
 	border-radius: 12px;
 	position: relative;
-	background-color: var(--light-togle);
+	background: var(--togle);
 
 	&:hover {
 		cursor: pointer;
 	}
 
 	&.active {
-		background: var(--dark-togle);
-
 		.switch__circle {
 			transform: translateX(calc(100% + 4px));
 		}
@@ -22,7 +20,7 @@
 		width: 18px;
 		height: 18px;
 		border-radius: 50%;
-		background-color: var(--light-bg);
+		background-color: var(--header-bg);
 		transition: transform 0.25s ease-out;
 	}
 }

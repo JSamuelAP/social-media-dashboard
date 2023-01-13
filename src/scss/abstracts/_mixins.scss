@@ -11,10 +11,10 @@
 
 	border-radius: var(--radius);
 	font-weight: var(--fw-700);
-	background-color: var(--light-card-bg);
+	background-color: var(--card-bg);
 
 	&:hover {
-		background-color: var(--light-card-hover);
+		background-color: var(--card-hover);
 		cursor: pointer;
 	}
 }

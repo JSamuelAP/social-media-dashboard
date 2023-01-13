@@ -2,7 +2,7 @@
 	padding: 40px 0 60px 0;
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 1rem;
-	background-color: var(--light-top-bg);
+	background-color: var(--header-bg);
 
 	@include from(m) {
 		padding-bottom: 155px;
@@ -15,13 +15,13 @@
 
 	&__heading {
 		margin-bottom: 14px;
-		color: var(--light-black-text);
+		color: var(--text-color);
 	}
 
 	&__followers,
 	.switch-container__text {
 		font-weight: var(--fw-700);
-		color: var(--light-gray-text);
+		color: var(--text-light);
 	}
 
 	&__switch-container {
@@ -30,7 +30,7 @@
 		align-items: center;
 		margin-top: 25px;
 		padding: 16px 0;
-		border-top: 1px solid var(--light-gray-text);
+		border-top: 1px solid var(--text-light);
 
 		@include from(m) {
 			justify-content: end;
