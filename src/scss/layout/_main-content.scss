@@ -1,6 +1,10 @@
 .main {
 	transform: translateY(-45px);
 
+	@include from(m) {
+		transform: translateY(-115px);
+	}
+
 	.social-media {
 		margin-bottom: 50px;
 

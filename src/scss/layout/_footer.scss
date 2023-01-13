@@ -2,6 +2,10 @@
 	padding: 2rem 0;
 	text-align: center;
 	color: var(--light-gray-text);
+
+	@include from(m) {
+		margin-top: -50px;
+	}
 }
 
 .attribution {

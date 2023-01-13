@@ -4,6 +4,15 @@
 	border-bottom-right-radius: 1rem;
 	background-color: var(--light-top-bg);
 
+	@include from(m) {
+		padding-bottom: 155px;
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
 	&__heading {
 		margin-bottom: 14px;
 		color: var(--light-black-text);
@@ -22,5 +31,13 @@
 		margin-top: 25px;
 		padding: 16px 0;
 		border-top: 1px solid var(--light-gray-text);
+
+		@include from(m) {
+			justify-content: end;
+			gap: 14px;
+			margin-top: 0;
+			padding: 0;
+			border-top: none;
+		}
 	}
 }
