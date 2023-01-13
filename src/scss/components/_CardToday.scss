@@ -1,0 +1,46 @@
+/**
+ * TODO: Reutilizar estilos para Card y CardToday
+ */
+.card-today {
+	padding: 30px 31px 26px 25px;
+	border-radius: 4px;
+	font-weight: var(--fw-700);
+	background-color: var(--light-card-bg);
+
+	&__heading {
+		font-size: var(--overview-card-heading);
+		color: var(--light-gray-text);
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+
+		&:first-of-type {
+			margin-bottom: 34px;
+			align-items: center;
+		}
+	}
+
+	&__number {
+		font-size: 32px;
+	}
+
+	/**
+   * TODO: Reutilizar estilos para las estadísticas con flecha
+   */
+	&__percentage {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		font-size: 12px;
+
+		&--positive {
+			color: var(--lime-green);
+		}
+		&--negative {
+			color: var(--bright-red);
+		}
+	}
+}

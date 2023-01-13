@@ -1,4 +1,5 @@
 import Card from "./Card";
+import CardToday from "./CardToday";
 
 const MainContent = () => {
 	return (
@@ -45,16 +46,72 @@ const MainContent = () => {
 					</div>
 				</section>
 				<section className="overview">
-					<h2>Overview - Today</h2>
+					<h2 className="overview__heading">Overview - Today</h2>
 					<div className="grid overview__grid">
-						<article>Page Views 87 3%</article>
-						<article>Likes 52 2%</article>
-						<article>Likes 5462 2257%</article>
-						<article>Profile Views 52k 1375%</article>
-						<article>Retweets 117 303%</article>
-						<article>Likes 507 553%</article>
-						<article>Likes 107 19%</article>
-						<article>Total Views 1407 12%</article>
+						<CardToday
+							data={{
+								title: "Page Views",
+								icon: "facebook",
+								number: "87",
+								percentage: 3,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Likes",
+								icon: "facebook",
+								number: "52",
+								percentage: 2,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Likes",
+								icon: "instagram",
+								number: "5462",
+								percentage: 2257,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Profile Views",
+								icon: "instagram",
+								number: "52k",
+								percentage: 1375,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Retweets",
+								icon: "twitter",
+								number: "117",
+								percentage: 303,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Likes",
+								icon: "twitter",
+								number: "507",
+								percentage: 553,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Likes",
+								icon: "youtube",
+								number: "107",
+								percentage: -19,
+							}}
+						/>
+						<CardToday
+							data={{
+								title: "Total Views",
+								icon: "youtube",
+								number: "1407",
+								percentage: -12,
+							}}
+						/>
 					</div>
 				</section>
 			</div>
