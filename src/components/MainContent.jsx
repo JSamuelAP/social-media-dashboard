@@ -6,7 +6,7 @@ const MainContent = () => {
 		<main class="main">
 			<div className="container">
 				<section className="social-media">
-					<div className="grid social__media-grid">
+					<div className="grid social-media__grid">
 						<Card
 							data={{
 								socialMedia: "facebook",

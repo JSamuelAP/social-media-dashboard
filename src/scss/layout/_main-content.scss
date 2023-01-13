@@ -3,10 +3,54 @@
 
 	.social-media {
 		margin-bottom: 50px;
+
+		&__grid {
+			gap: 24px;
+
+			@include from(m) {
+				& {
+					grid-template-columns: 1fr 1fr;
+					gap: 30px;
+				}
+			}
+			@include from(xl) {
+				& {
+					grid-template-columns: repeat(4, 1fr);
+				}
+			}
+		}
 	}
 
-	.overview__heading {
-		color: var(--light-gray-text);
-		margin-bottom: 33px;
+	.overview {
+		&__heading {
+			color: var(--light-gray-text);
+			margin-bottom: 33px;
+		}
+
+		&__grid {
+			gap: 16px;
+
+			@include from(s) {
+				& {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+			@include from(m) {
+				& {
+					gap: 24px 30px;
+				}
+			}
+			@include from(l) {
+				& {
+					grid-template-columns: repeat(4, 1fr);
+					gap: 24px;
+				}
+			}
+			@include from(xl) {
+				& {
+					column-gap: 30px;
+				}
+			}
+		}
 	}
 }
