@@ -1,10 +1,13 @@
 import { useState } from "react";
+import useTheme from "../hooks/useTheme";
 
 const Switch = () => {
 	const [active, setActive] = useState(false);
+	const { handleTheme } = useTheme();
 
 	const handleClick = () => {
 		setActive(!active);
+		handleTheme(active);
 	};
 
 	return (
