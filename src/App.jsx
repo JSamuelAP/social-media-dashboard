@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 
@@ -6,13 +7,7 @@ function App() {
 		<>
 			<Header />
 			<MainContent />
-			<div class="attribution">
-				Challenge by{" "}
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-					Frontend Mentor
-				</a>
-				. Coded by <a href="#">Your Name Here</a>.
-			</div>
+			<Footer />
 		</>
 	);
 }

@@ -1,0 +1,27 @@
+.footer {
+	padding: 2rem 0;
+	text-align: center;
+	color: var(--light-gray-text);
+}
+
+.attribution {
+	&__frontend-mentor,
+	&__author {
+		display: block;
+	}
+
+	&__frontend-mentor {
+		margin-bottom: 0.5rem;
+	}
+	&__author &__link {
+		font-weight: var(--fw-700);
+	}
+
+	&__link {
+		color: var(--lime-green);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
