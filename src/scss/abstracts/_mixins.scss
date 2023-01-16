@@ -21,21 +21,6 @@
 	}
 }
 
-@mixin stat($justify-content) {
-	display: flex;
-	justify-content: $justify-content;
-	align-items: center;
-	gap: 4px;
-	font-size: 12px;
-
-	&--positive {
-		color: var(--lime-green);
-	}
-	&--negative {
-		color: var(--bright-red);
-	}
-}
-
 %transition {
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
 }

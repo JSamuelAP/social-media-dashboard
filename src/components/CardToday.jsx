@@ -1,10 +1,7 @@
-import React from "react";
+import GrowthArrow from "./GrowthArrow";
 
 function CardToday({ data }) {
 	let { title, icon, number, growthPercentage } = data;
-
-	const growthPositive = growthPercentage > 0;
-	growthPercentage = Math.abs(growthPercentage);
 
 	return (
 		<article className="card-today">
@@ -14,17 +11,11 @@ function CardToday({ data }) {
 			</div>
 			<div className="card-today__row">
 				<span className="card-today__number">{number}</span>
-				<span
-					className={`card-today__growth-percentage card-today__growth-percentage--${
-						growthPositive ? "positive" : "negative"
-					}`}
-				>
-					<img
-						src={`src/assets/images/icon-${growthPositive ? "up" : "down"}.svg`}
-						alt=""
-					/>
-					{growthPercentage}%
-				</span>
+				<GrowthArrow
+					growth={growthPercentage}
+					text={`${Math.abs(growthPercentage)}%`}
+					aditionalClassName={"card-today__growth-percentage"}
+				/>
 			</div>
 		</article>
 	);

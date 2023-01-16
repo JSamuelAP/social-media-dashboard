@@ -1,3 +1,5 @@
+import GrowthArrow from "./GrowthArrow";
+
 const Card = ({ data }) => {
 	let {
 		socialNetworkName,
@@ -6,9 +8,6 @@ const Card = ({ data }) => {
 		typeFollowers,
 		growthToday,
 	} = data;
-
-	const growthPositive = growthToday > 0;
-	growthToday = Math.abs(growthToday);
 
 	return (
 		<article className={`card card--${socialNetworkName}`}>
@@ -22,17 +21,11 @@ const Card = ({ data }) => {
 			</h3>
 			<span className="card__num-followers">{numFollowers}</span>
 			<span className="card__type-followers">{typeFollowers}</span>
-			<span
-				className={`card__growth-today card__growth-today--${
-					growthPositive ? "positive" : "negative"
-				}`}
-			>
-				<img
-					src={`src/assets/images/icon-${growthPositive ? "up" : "down"}.svg`}
-					alt={`${socialNetworkName} icon`}
-				/>
-				{growthToday} Today
-			</span>
+			<GrowthArrow
+				growth={growthToday}
+				text={`${Math.abs(growthToday)} Today`}
+				aditionalClassName={"card__growth-today"}
+			/>
 		</article>
 	);
 };

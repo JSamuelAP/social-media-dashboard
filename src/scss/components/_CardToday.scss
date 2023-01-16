@@ -23,6 +23,6 @@
 	}
 
 	&__growth-percentage {
-		@include stat(start);
+		justify-content: start;
 	}
 }
