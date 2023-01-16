@@ -23,11 +23,11 @@ const MainContent = () => {
 								<Card
 									key={name}
 									data={{
-										socialMedia: name,
+										socialNetworkName: name,
 										username,
-										numFollowersTotal: numFollowers,
-										followersText: typeFollowers,
-										numFollowersToday: growthToday,
+										numFollowers,
+										typeFollowers,
+										growthToday,
 									}}
 								/>
 							);
@@ -47,7 +47,7 @@ const MainContent = () => {
 										title,
 										icon: name,
 										number,
-										percentage: growthPercentage,
+										growthPercentage,
 									}}
 								/>
 							);

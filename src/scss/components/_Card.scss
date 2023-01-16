@@ -14,8 +14,8 @@
 		border-radius: var(--radius) var(--radius) 0 0;
 	}
 
-	@each $social-media, $color in $social-media-colors {
-		&--#{$social-media}::before {
+	@each $social-network, $color in $social-media-colors {
+		&--#{$social-network}::before {
 			background: $color;
 		}
 	}
@@ -42,7 +42,7 @@
 		font-size: 60px;
 	}
 
-	&__text-followers {
+	&__type-followers {
 		display: block;
 		margin-bottom: 30px;
 		text-transform: uppercase;
@@ -52,7 +52,7 @@
 		color: var(--text-light);
 	}
 
-	&__followers-today {
+	&__growth-today {
 		@include stat(center);
 	}
 }

@@ -1,39 +1,37 @@
 const Card = ({ data }) => {
 	let {
-		socialMedia,
+		socialNetworkName,
 		username,
-		numFollowersTotal,
-		followersText,
-		numFollowersToday,
+		numFollowers,
+		typeFollowers,
+		growthToday,
 	} = data;
 
-	const followersPositive = numFollowersToday > 0;
-	numFollowersToday = Math.abs(numFollowersToday);
+	const growthPositive = growthToday > 0;
+	growthToday = Math.abs(growthToday);
 
 	return (
-		<article className={`card card--${socialMedia}`}>
+		<article className={`card card--${socialNetworkName}`}>
 			<h3 className="card__heading">
 				<img
-					src={`src/assets/images/icon-${socialMedia}.svg`}
-					alt={`${socialMedia} icon`}
+					src={`src/assets/images/icon-${socialNetworkName}.svg`}
+					alt={`${socialNetworkName} icon`}
 					className="card__icon"
 				/>
 				{username}
 			</h3>
-			<span className="card__num-followers">{numFollowersTotal}</span>
-			<span className="card__text-followers">{followersText}</span>
+			<span className="card__num-followers">{numFollowers}</span>
+			<span className="card__type-followers">{typeFollowers}</span>
 			<span
-				className={`card__followers-today card__followers-today--${
-					followersPositive ? "positive" : "negative"
+				className={`card__growth-today card__growth-today--${
+					growthPositive ? "positive" : "negative"
 				}`}
 			>
 				<img
-					src={`src/assets/images/icon-${
-						followersPositive ? "up" : "down"
-					}.svg`}
-					alt={`${socialMedia} icon`}
+					src={`src/assets/images/icon-${growthPositive ? "up" : "down"}.svg`}
+					alt={`${socialNetworkName} icon`}
 				/>
-				{numFollowersToday} Today
+				{growthToday} Today
 			</span>
 		</article>
 	);
