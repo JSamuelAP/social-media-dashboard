@@ -1,5 +1,6 @@
 body {
 	background-color: var(--bg-color);
+	@extend %transition;
 
 	&.dark {
 		// Actualizar cada variable CSS a su color correspondiente en el tema oscuro

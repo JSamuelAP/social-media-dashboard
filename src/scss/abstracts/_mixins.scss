@@ -12,9 +12,11 @@
 	border-radius: var(--radius);
 	font-weight: var(--fw-700);
 	background-color: var(--card-bg);
+	@extend %transition;
 
 	&:hover {
 		background-color: var(--card-hover);
+		transition: none;
 		cursor: pointer;
 	}
 }
@@ -32,4 +34,8 @@
 	&--negative {
 		color: var(--bright-red);
 	}
+}
+
+%transition {
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
 }

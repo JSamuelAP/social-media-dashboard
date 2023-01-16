@@ -3,6 +3,7 @@
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 1rem;
 	background-color: var(--header-bg);
+	@extend %transition;
 
 	@include from(m) {
 		padding-bottom: 155px;
