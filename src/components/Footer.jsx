@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="container">
-				<div class="footer__attribution">
+				<div className="footer__attribution">
 					<span className="attribution__frontend-mentor">
 						{"Challenge by "}
 						<a

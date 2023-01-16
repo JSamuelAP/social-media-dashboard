@@ -6,7 +6,7 @@ const MainContent = () => {
 	const { socialMediaStats, overviewTodayStats } = useSocialData();
 
 	return (
-		<main class="main">
+		<main className="main">
 			<div className="container">
 				<section className="social-media">
 					<div className="grid social-media__grid">
