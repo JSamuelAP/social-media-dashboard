@@ -1,102 +1,100 @@
 import { createContext, useState } from "react";
 
-const SocialMediaContext = createContext();
+const SocialDataContext = createContext();
 
-const initialSocialMediaStats = {
+const initialSocialStats = {
 	totalFollowers: "23,004",
-	socialMedia: [
+	socialMediaStats: [
 		{
 			name: "facebook",
 			username: "@nathanf",
-			totalFollowers: "1987",
+			numFollowers: "1987",
 			typeFollowers: "followers",
-			followersToday: 12,
+			growthToday: 12,
 		},
 		{
 			name: "twitter",
 			username: "@nathanf",
-			totalFollowers: "1044",
+			numFollowers: "1044",
 			typeFollowers: "followers",
-			followersToday: 99,
+			growthToday: 99,
 		},
 		{
 			name: "instagram",
 			username: "@realnathanf",
-			totalFollowers: "11k",
+			numFollowers: "11k",
 			typeFollowers: "followers",
-			followersToday: 1099,
+			growthToday: 1099,
 		},
 		{
 			name: "youtube",
 			username: "Nathan F.",
-			totalFollowers: "8239",
+			numFollowers: "8239",
 			typeFollowers: "subscribers",
-			followersToday: -144,
+			growthToday: -144,
 		},
 	],
-	overviewToday: [
+	overviewTodayStats: [
 		{
 			name: "facebook",
 			title: "Page Views",
 			number: "87",
-			percentage: 12,
+			growthPercentage: 12,
 		},
 		{
 			name: "facebook",
 			title: "Likes",
 			number: "52",
-			percentage: -2,
+			growthPercentage: -2,
 		},
 		{
 			name: "instagram",
 			title: "Likes",
 			number: "5462",
-			percentage: 2257,
+			growthPercentage: 2257,
 		},
 		{
 			name: "instagram",
 			title: "Profile Views",
 			number: "52k",
-			percentage: 1375,
+			growthPercentage: 1375,
 		},
 		{
 			name: "twitter",
 			title: "Retweets",
 			number: "117",
-			percentage: 303,
+			growthPercentage: 303,
 		},
 		{
 			name: "twitter",
 			title: "Likes",
 			number: "507",
-			percentage: 553,
+			growthPercentage: 553,
 		},
 		{
 			name: "youtube",
 			title: "likes",
 			number: "107",
-			percentage: -19,
+			growthPercentage: -19,
 		},
 		{
 			name: "youtube",
 			title: "Total Views",
 			number: "1407",
-			percentage: -12,
+			growthPercentage: -12,
 		},
 	],
 };
 
-const SocialMediaProvider = ({ children }) => {
-	const [socialMediaStats, setSocialMediaStats] = useState(
-		initialSocialMediaStats
-	);
+const SocialDataProvider = ({ children }) => {
+	const [socialStats] = useState(initialSocialStats);
 
 	return (
-		<SocialMediaContext.Provider value={socialMediaStats}>
+		<SocialDataContext.Provider value={socialStats}>
 			{children}
-		</SocialMediaContext.Provider>
+		</SocialDataContext.Provider>
 	);
 };
 
-export { SocialMediaProvider };
-export default SocialMediaContext;
+export { SocialDataProvider };
+export default SocialDataContext;

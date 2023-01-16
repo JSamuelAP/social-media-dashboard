@@ -1,23 +1,23 @@
-import useSocialMedia from "../hooks/useSocialMedia";
+import useSocialData from "../hooks/useSocialMedia";
 import Card from "./Card";
 import CardToday from "./CardToday";
 
 const MainContent = () => {
-	const { socialMedia, overviewToday } = useSocialMedia();
+	const { socialMediaStats, overviewTodayStats } = useSocialData();
 
 	return (
 		<main class="main">
 			<div className="container">
 				<section className="social-media">
 					<div className="grid social-media__grid">
-						{socialMedia.map((item) => {
+						{socialMediaStats.map((socialNetwork) => {
 							const {
 								name,
 								username,
-								totalFollowers,
+								numFollowers,
 								typeFollowers,
-								followersToday,
-							} = item;
+								growthToday,
+							} = socialNetwork;
 
 							return (
 								<Card
@@ -25,9 +25,9 @@ const MainContent = () => {
 									data={{
 										socialMedia: name,
 										username,
-										numFollowersTotal: totalFollowers,
+										numFollowersTotal: numFollowers,
 										followersText: typeFollowers,
-										numFollowersToday: followersToday,
+										numFollowersToday: growthToday,
 									}}
 								/>
 							);
@@ -37,8 +37,8 @@ const MainContent = () => {
 				<section className="overview">
 					<h2 className="overview__heading">Overview - Today</h2>
 					<div className="grid overview__grid">
-						{overviewToday.map((item, index) => {
-							const { title, name, number, percentage } = item;
+						{overviewTodayStats.map((socialNetwork, index) => {
+							const { title, name, number, growthPercentage } = socialNetwork;
 
 							return (
 								<CardToday
@@ -47,7 +47,7 @@ const MainContent = () => {
 										title,
 										icon: name,
 										number,
-										percentage,
+										percentage: growthPercentage,
 									}}
 								/>
 							);

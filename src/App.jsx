@@ -1,17 +1,17 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
-import { SocialMediaProvider } from "./context/SocialMediaContext";
+import { SocialDataProvider } from "./context/SocialDataContext";
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
 	return (
 		<ThemeProvider>
-			<SocialMediaProvider>
+			<SocialDataProvider>
 				<Header />
 				<MainContent />
 				<Footer />
-			</SocialMediaProvider>
+			</SocialDataProvider>
 		</ThemeProvider>
 	);
 }

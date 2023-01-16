@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import SocialMediaContext from "../context/SocialMediaContext";
+import SocialDataContext from "../context/SocialDataContext";
 
-const useSocialMedia = () => {
-	return useContext(SocialMediaContext);
+const useSocialData = () => {
+	return useContext(SocialDataContext);
 };
 
-export default useSocialMedia;
+export default useSocialData;

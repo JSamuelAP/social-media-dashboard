@@ -1,8 +1,8 @@
-import useSocialMedia from "../hooks/useSocialMedia";
+import useSocialData from "../hooks/useSocialMedia";
 import Switch from "./Switch";
 
 const Header = () => {
-	const { totalFollowers } = useSocialMedia();
+	const { totalFollowers } = useSocialData();
 
 	return (
 		<header className="header">
