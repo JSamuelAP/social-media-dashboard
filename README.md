@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links 🔗
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-hy-T5lxKNX)
 - Live Site URL: [Github Pages](https://jsamuelap.github.io/social-media-dashboard/)
 
 ## My process 🏗️
@@ -65,6 +65,8 @@ border-image: linear-gradient(yellow, pink) 1;
 
 At the end I didn't use this property because it can't be rounded with `border-radius`, I used pseudo elements better, but I learned new things 😁.
 
+When you build your React proyect in vite with `npm run build`, you can see the result with `npm run preview`, this pull up a server on port 4173.
+
 Finally I learned **how to deploy** a React proyect with **Vite** and **gh-pages** npm module:
 
 ```js
@@ -72,6 +74,10 @@ export default defineConfig({
 	plugins: [react()],
 	base: "/social-media-dashboard/",
 });
+```
+
+```json
+"deploy": "gh-pages -d dist",
 ```
 
 ```bash
