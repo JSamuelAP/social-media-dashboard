@@ -51,6 +51,7 @@ Users should be able to:
   - Custom Hooks
   - Context API
 - [Vite](https://main.vitejs.dev/) - Build Tool
+- [gh-pages](https://www.npmjs.com/package/gh-pages) - Deploy module
 
 ### What I learned 🧠
 
@@ -64,10 +65,24 @@ border-image: linear-gradient(yellow, pink) 1;
 
 At the end I didn't use this property because it can't be rounded with `border-radius`, I used pseudo elements better, but I learned new things 😁.
 
+Finally I learned **how to deploy** a React proyect with **Vite** and **gh-pages** npm module:
+
+```js
+export default defineConfig({
+	plugins: [react()],
+	base: "/social-media-dashboard/",
+});
+```
+
+```bash
+npm run deploy
+```
+
 ### Useful resources 📚
 
 - [SASS 7-1 Pattern](https://www.easeout.co/blog/2020-08-25-structuring-your-sass-projects/) - This post talks about a architecture for structure the SASS folders.
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - This specificacion helped me to write better commit messages.
+- [Deploying a Static Site](https://vitejs.dev/guide/static-deploy.html#github-pages) - Steps for deploy a proyect in Github pages with Vite.
 
 ## Author ✒️
 
