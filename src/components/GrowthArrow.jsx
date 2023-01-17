@@ -1,3 +1,5 @@
+import arrowIcons from "../assets/images";
+
 const GrowthArrow = ({ growth, text, aditionalClassName }) => {
 	const growthPositive = growth > 0;
 
@@ -8,7 +10,7 @@ const GrowthArrow = ({ growth, text, aditionalClassName }) => {
 			} ${aditionalClassName}`}
 		>
 			<img
-				src={`src/assets/images/icon-${growthPositive ? "up" : "down"}.svg`}
+				src={growthPositive ? arrowIcons.up : arrowIcons.down}
 				alt={`${growthPositive ? "↑" : "↓"}`}
 			/>
 			{text}

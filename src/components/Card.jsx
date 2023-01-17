@@ -1,4 +1,5 @@
 import GrowthArrow from "./GrowthArrow";
+import socialMediaIcons from "../assets/images";
 
 const Card = ({ data }) => {
 	let {
@@ -13,7 +14,7 @@ const Card = ({ data }) => {
 		<article className={`card card--${socialNetworkName}`}>
 			<h3 className="card__heading">
 				<img
-					src={`src/assets/images/icon-${socialNetworkName}.svg`}
+					src={socialMediaIcons[socialNetworkName]}
 					alt={`${socialNetworkName} icon`}
 					className="card__icon"
 				/>
